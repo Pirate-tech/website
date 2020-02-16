@@ -1,0 +1,28 @@
+.jumbotron{
+  background-image: url(https://store-images.s-microsoft.com/image/apps.5980.69193298161071220.7c147b76-ab45-48fc-95ce-70c11df6b921.2d21cc4a-0b5a-42f6-b578-ce9dd6e08b07?mode=scale&q=90&h=1080&w=1920); 
+}
+
+body{
+    background-image: url(https://drive.google.com/uc?id=1AUojVAsyGcN5p27TadbCNAHXzN0YCL71);
+}
+.card:hover{
+  transform: scale(1.05);
+}
+#gaming {
+  background-image: url(https://cdn3.f-cdn.com/contestentries/1489974/18545046/5cba2aba229c4_thumb900.jpg);
+}
+#sports{
+  background-image: url(https://cdn5.vectorstock.com/i/1000x1000/30/29/seamless-sports-pattern-background-vector-1963029.jpg);
+}
+#coding{
+  background-image: url(https://img.freepik.com/free-vector/blue-cyber-future-technology-concept-background_42077-488.jpg?size=626&ext=jpg);
+}
+#reading{
+  background-image: url(https://previews.123rf.com/images/annaleni/annaleni1507/annaleni150700084/42172425-seamless-pattern-reading-book-and-knowledge-objects-over-yellow-flat-style-vector-seamless-texture-b.jpg);
+}
+#movies{
+  background-image: url(https://previews.123rf.com/images/summertimeau/summertimeau1702/summertimeau170200352/72088777-seamless-pattern-with-movies-symbols-cinema-background-vector.jpg);
+}
+#music{
+  background-image: url();
+}
