@@ -2,9 +2,15 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href=>
-    <Link rel="icon" type="image/jpg"
-        href="https://www.brandcrowd.com/gallery/brands/pictures/picture15540681577672.jpg">
+    <style>
+        .jumbotron {
+            background-image: url(https://s3-eu-west-1.amazonaws.com/images-islandbuses.passenger-website.com/2019-03/SV_website_get%20in%20touch_2048x1024_0219%20PRESS.jpg);
+        }
+
+        body {
+            background-image: url(https://lh3.googleusercontent.com/proxy/C80YPe-ULJPHAy4qXjzb4AzuYoEUp_ohEA31DzMZ0XDeyfUsmwMnR9pbWbygmity60_jBVkFILH9RxAVgGBr);
+        }
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -18,18 +24,23 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>music</title>
-    <style>
-        .jumbotron {
-            background-image: url("https://st2.depositphotos.com/5360770/10573/v/950/depositphotos_105734542-stock-illustration-music-background-with-musical-instruments.jpg");
-        }
-    </style>
+    <title>Contact-me</title>
 </head>
 
-
-
 <body class="container-fluid">
+    <script>
+        function verify(){
+            var x= document.getElementById("Name").value;
+            var y=document.getElementById("Emailaddress").value;
+            var z=document.getElementById("Yourthoughts").value;
+            if(x == "" || y == "" || z == "")
+            {
+                alert("Please fill the form");
+            }
+            else
+                alert("Submission sucessful");    
+        }
+    </script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Ashman Bhokardole</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav"
@@ -43,42 +54,29 @@
                 <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
                 <li class="nav-item"><a class="nav-link" href="reading.html">Reading</a></li>
                 <li class="nav-item"><a class="nav-link" href="gaming.html">Gaming</a></li>
-                <li class="nav-item"><a class="nav-link" href="contactme.html">Contact me</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactme.html">Contact-me</a></li>
             </ul>
         </div>
     </nav>
+
     <div class="jumbotron">
-        <h1 class="display-3 text-white">Music</h1>
+        <h1 class="display-3">Contact-me</h1>
     </div>
-    <h3></h3>
-    <h3>Music: Music is one of my favourite hobbies.when I am sad I listen to Music and I feel very good.</h3>
-    <h3>Some of my favourite artist are:</h3>
-    <div class="card-deck">
-        <div class="card">
-            <IMG class="img-fluid mx-auto d-block"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRkfK5ULcBJEsT5RCchsgqkuRaVWnNn8koeTk5JWsabdvErk4j3"
-                style="height: 65%; width: 35%;">
-            <div class="card-body text-center">
-                <h2>ZHU </h2>
-            </div>
+    <form>
+        <div class="form-group">
+            <label for="Name" class="text-white">Name</label>
+            <input type="Name" class="form-control" id="Name" placeholder="Enter Name"> 
         </div>
-        <div class="card">
-            <IMG class="img-fluid mx-auto d-block"
-                src="https://cdn.shopify.com/s/files/1/0035/2990/0150/products/57_77b04c0f-f4fe-43d3-9d69-528fdbf74333_1200x1200.jpg?v=1571709967"
-                style="height: 65%; width: 45% ;">
-            <div class="card-body text-center">
-                <h2>MARSHMELLO</h2>
-            </div>
+        <div class="form-group">
+            <label for="Emailaddress" class="text-white">Email address</label>
+            <input type="email" class="form-control" id="Emailaddress" placeholder="Enter Email Address">
         </div>
-        <div class="card">
-            <img class="img-fluid mx-auto d-block"
-                src="https://shawglobalnews.files.wordpress.com/2015/06/deadmau5.jpg?quality=70&strip=all"
-                style="height: 65%;width: 45%;">
-            <div class="card-body text-center">
-                <h2>DEADMAU5</h2>
-            </div>
+        <div class="form-group">
+            <label for="Yourthoughts" class="text-white">Your Thoughts (Optional)</label>
+            <textarea class="form-control" id="Yourthoughts" rows="3" placeholder="Enter Your Thoughts"></textarea>
         </div>
-    </div>
-    <br>
+        <button type="button" class="btn btn-primary" onclick="verify()">Submit</button>
+    </form>
 </body>
+
 </html>
